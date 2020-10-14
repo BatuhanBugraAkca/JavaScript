@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var x = {};
+        var obj = {
+            okuladi: "Karaelmas Universtiy",
+            okulyili: 2012,
+            okulsehri: "Zonguldak",
+            number: "555 55 5",
+            diller: ['Java', 'Angular', 'C#', 'C++'],
+            hobiler: ['Satranc', 'Keman', 'Gitar', 'Yuzme'],
+            UniverstiyYear: function() {
+                return 2019 - this.okulyili;
+            }
+
+
+        };
+        document.write("<br/>Okul Adi:" + obj.okuladi + "<br/><hr/>Giris Tarihi=" + obj.okulyili + "<br/><hr/>Sehri" + obj.okulsehri + "<br/><hr/>Numarasi:" + obj.number + "<br/><hr/>Diller:" + obj.diller[2] + "<br/><hr/>Universite Yasi:" + obj.UniverstiyYear());
+        obj.hobiler.forEach(function(item) {
+            alert(item)
+        });
+    </script>
+</body>
+
+</html>

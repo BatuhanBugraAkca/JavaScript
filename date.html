@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=" device-width ", initial-scale=1.0">
+    <title>Date</title>
+</head>
+
+<body>
+    <button onclick="Tarih()">Click ME</button>
+    <script>
+        function Tarih() {
+            var dat = new Date();
+            alert(dat.getUTCDate());
+            alert(dat.getFullYear()); //yıl
+            alert(dat.getMonth()); //ay
+            alert(dat.getDay()); //gün
+            alert(dat.getHours()); //saat
+            alert(dat.getMinutes()); //dakika
+            alert(dat.getSeconds()); //saniye
+
+            //  document.getElementById("id2").innerHTML = dat;
+        }
+    </script>
+
+</body>
+
+</html>

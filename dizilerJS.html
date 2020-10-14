@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var dizi = [4, 8, 6, 2];
+        dizi.push(666) //dizinin sonuna ekleme yapar
+        dizi.unshift(4564); //dizinin basına ekleme yapar 
+        for (var i = 0; i < dizi.length; i++) {
+            alert(dizi[i]);
+
+        }
+        alert("Sondan Cıkarılacak")
+        dizi.pop();
+        for (var i = 0; i < dizi.length; i++) {
+            alert(dizi[i]);
+
+        }
+        alert("Bastan Cıkarılacak")
+        dizi.shift();
+        for (var i = 0; i < dizi.length; i++) {
+            alert(dizi[i]);
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var cift = new Array();
+        var tek = new Array();
+        var yedek = 0;
+        var cifttopalam = 0;
+        var a = 0;
+        var b = 0;
+
+
+        var tektoplam = 0;
+        for (var i = 1; i < 20; i++) {
+
+
+            if (i % 2 == 0) {
+                cifttopalam += i;
+                cift[a] = i;
+                a++;
+            }
+
+            if (i % 2 != 0) {
+                tektoplam += i;
+
+
+                tek[b] = i;
+
+                b++;
+
+            }
+
+
+        }
+        alert("1 'den 20'ye kadar olan cıft sayılar ")
+        for (var i = 0; i < cift.length; i++) {
+            alert(cift[i]);
+
+        }
+        alert("1 'den 20'ye kadar olan tek sayılar ")
+
+        for (var j = 0; j < tek.length; j++) {
+            alert(tek[j]);
+        }
+
+        alert("0 dan 20 ye Cift Toplam " + (cifttopalam));
+        alert("0 dan 20 ye Tek toplam" + (tektoplam));
+    </script>
+</body>
+
+</html>

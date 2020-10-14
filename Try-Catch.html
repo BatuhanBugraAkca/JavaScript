@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch</title>
+</head>
+
+<body>
+    <script>
+        try {
+            var x = 4;
+            var y = 2; //2 yerine 0 yazarsanız eror verir
+            var z = x / y; //burda ki işlem olmazsa 
+            alert(z);
+
+        } catch (error) { //eror veriri
+            alert("Sayi Sifira bölünmez");
+        } finally {
+            alert("Kesin çalismasini istediğiniz yer");
+        }
+    </script>
+</body>
+
+</html>
